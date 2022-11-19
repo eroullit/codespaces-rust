@@ -10,6 +10,12 @@
   "postAttachCommand": {
     "server": "cargo run"
   },
+  "portsAttributes": {
+    "8888": {
+      "label": "Application",
+      "onAutoForward": "openPreview"
+    }
+  },
   "customizations": {
     "codespaces": {
       "openFiles": [
@@ -21,5 +27,6 @@
         "rust-lang.rust-analyzer"
       ]
     }
-  }
+  },
+  "forwardPorts": [8888]
 }
