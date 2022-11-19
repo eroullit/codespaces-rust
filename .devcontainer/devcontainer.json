@@ -19,7 +19,8 @@
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "src/main.rs"
+        "src/main.rs",
+        "templates/index.html"
       ]
     },
     "vscode": {
