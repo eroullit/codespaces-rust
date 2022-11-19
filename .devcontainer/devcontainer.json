@@ -1,0 +1,25 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "hostRequirements": {
+    "cpus": 4
+  },
+  "waitFor": "onCreateCommand",
+  "onCreateCommand": "sudo apt install -y cargo && cargo init",
+  "updateContentCommand": "cargo build",
+  "postCreateCommand": "",
+  "postAttachCommand": {
+    "server": "cargo run"
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "src/main.rs"
+      ]
+    },
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer"
+      ]
+    }
+  }
+}
